@@ -399,7 +399,8 @@
       document.body.appendChild(overlay);
 
       setTimeout(() => {
-        window.location.reload();
+        // Force a hard refresh to bypass browser cache
+        window.location.href = window.location.origin + window.location.pathname + '?refresh=' + new Date().getTime() + window.location.hash;
       }, 10000);
     });
   </script>
