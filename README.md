@@ -1,3 +1,8 @@
+# 🛑 CURRENTLY BLOCKED 🛑
+**This ERP and Web Application is currently blocked and closed.**
+
+---
+
 # MoltyFoam ERP
 
 A simple Retail Dealership ERP Web Application for managing multiple showrooms, orders, deliveries, and more.

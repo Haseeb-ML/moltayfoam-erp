@@ -385,15 +385,17 @@
       overlay.style.left = '0';
       overlay.style.width = '100vw';
       overlay.style.height = '100vh';
-      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+      overlay.style.backgroundColor = 'red';
       overlay.style.color = 'white';
       overlay.style.display = 'flex';
+      overlay.style.flexDirection = 'column';
       overlay.style.alignItems = 'center';
       overlay.style.justifyContent = 'center';
-      overlay.style.fontSize = '2.5rem';
-      overlay.style.fontWeight = 'bold';
+      overlay.style.fontSize = '3rem';
+      overlay.style.fontWeight = '900';
       overlay.style.zIndex = '999999';
-      overlay.innerHTML = 'Yeh web currently close hai';
+      overlay.style.textAlign = 'center';
+      overlay.innerHTML = '🛑 CURRENTLY BLOCKED 🛑<br><span style="font-size: 1.5rem; margin-top: 20px;">Yeh web currently close hai</span>';
       document.body.appendChild(overlay);
 
       setTimeout(() => {
