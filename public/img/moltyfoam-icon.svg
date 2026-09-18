@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="blueGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc" />
+      <stop offset="100%" stop-color="#002f6c" />
+    </linearGradient>
+    <linearGradient id="goldGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe259" />
+      <stop offset="100%" stop-color="#fdb813" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#blueGradIcon)" stroke="#fdb813" stroke-width="2.5"/>
+  <!-- Crown Icon -->
+  <path d="M14 44 L14 26 L23 34 L32 18 L41 34 L50 26 L50 44 Z" fill="url(#goldGradIcon)"/>
+  <circle cx="14" cy="26" r="2.5" fill="#ffffff"/>
+  <circle cx="50" cy="26" r="2.5" fill="#ffffff"/>
+  <circle cx="32" cy="18" r="3" fill="#ffffff"/>
+  <!-- M Lettermark -->
+  <text x="32" y="55" font-family="'Inter', sans-serif" font-weight="900" font-size="10" fill="#ffffff" text-anchor="middle" letter-spacing="1">MOLTY</text>
+</svg>

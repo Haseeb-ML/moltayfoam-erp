@@ -1,0 +1,20 @@
+{
+  "name": "retail-erp",
+  "version": "1.0.0",
+  "description": "Production-Ready Retail Dealership ERP Web Application with Multi-Showroom, Mobile Challan Entry, Make-To-Order Engine, Multi-Stage Delivery, and Dynamic RBAC",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node db/seed.js",
+    "test": "node test/api-tests.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.30.1"
+  }
+}

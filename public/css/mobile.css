@@ -1,0 +1,110 @@
+/* Mobile & Tablet Responsive Styles */
+
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile Sidebar as Drawer */
+  #app-sidebar {
+    transform: translateX(-100%);
+    width: 280px;
+    box-shadow: var(--shadow-modal);
+  }
+
+  #app-sidebar.drawer-open {
+    transform: translateX(0);
+  }
+
+  #app-main {
+    margin-left: 0;
+  }
+
+  .menu-toggle-btn {
+    display: flex;
+  }
+
+  .brand-title {
+    font-size: 0.95rem;
+  }
+
+  /* Showroom selector compact on mobile */
+  .showroom-selector-group {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .showroom-selector-label {
+    display: none;
+  }
+
+  .showroom-select {
+    font-size: 0.8rem;
+    max-width: 130px;
+  }
+
+  #content-area {
+    padding: 1rem 0.75rem;
+  }
+
+  .page-header {
+    margin-bottom: 1rem;
+  }
+
+  .page-title-group h1 {
+    font-size: 1.25rem;
+  }
+
+  /* KPI Grid */
+  .kpi-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .kpi-card {
+    padding: 1rem;
+  }
+
+  .kpi-value {
+    font-size: 1.35rem;
+  }
+
+  /* Mobile Challan Entry Layout */
+  .mobile-challan-container {
+    padding: 0.5rem 0;
+  }
+
+  .challan-item-row {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Profit Box Stack on Mobile */
+  .profit-metric-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  /* Modal on Mobile */
+  .modal-container {
+    max-height: 95vh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+
+  .modal-backdrop {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  .modal-footer {
+    padding: 0.75rem 1rem;
+  }
+}

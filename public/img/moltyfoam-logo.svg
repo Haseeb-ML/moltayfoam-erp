@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 70" width="340" height="70">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe259" />
+      <stop offset="50%" stop-color="#ffa751" />
+      <stop offset="100%" stop-color="#fdb813" />
+    </linearGradient>
+    <linearGradient id="masterRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d90429" />
+      <stop offset="100%" stop-color="#ef233c" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc" />
+      <stop offset="100%" stop-color="#003380" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Crown / Logo Crest Icon -->
+  <g transform="translate(6, 8)" filter="url(#shadow)">
+    <rect x="0" y="2" width="50" height="50" rx="12" fill="url(#blueGrad)" stroke="#fdb813" stroke-width="1.8"/>
+    <!-- Master Crown Shape -->
+    <path d="M12 36 L12 22 L19 28 L25 16 L31 28 L38 22 L38 36 Z" fill="url(#goldGrad)" stroke="#b8860b" stroke-width="0.8"/>
+    <!-- Star on top peak -->
+    <polygon points="25,12 26.5,15 30,15 27,17 28.5,20 25,18 21.5,20 23,17 20,15 23.5,15" fill="#ffffff"/>
+    <circle cx="12" cy="22" r="2" fill="#ffffff"/>
+    <circle cx="38" cy="22" r="2" fill="#ffffff"/>
+    <!-- Letter M inside base -->
+    <text x="25" y="44" font-family="'Inter', sans-serif" font-weight="900" font-size="8" fill="#ffffff" text-anchor="middle" letter-spacing="1">MASTER</text>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(66, 10)">
+    <!-- MASTER Badge -->
+    <rect x="0" y="2" width="76" height="15" rx="3" fill="url(#masterRed)"/>
+    <text x="38" y="13.5" font-family="'Inter', sans-serif" font-weight="900" font-size="10.5" fill="#ffffff" text-anchor="middle" letter-spacing="2.5">MASTER</text>
+
+    <!-- MoltyFoam Main Title -->
+    <text x="0" y="38" font-family="'Inter', sans-serif" font-weight="900" font-size="24" letter-spacing="-0.5">
+      <tspan fill="#0056b3">Molty</tspan><tspan fill="#fdb813">Foam</tspan>
+    </text>
+
+    <!-- Tagline & Dealership Badge -->
+    <text x="132" y="37" font-family="'Inter', sans-serif" font-weight="700" font-size="10" fill="#10b981">
+      ★ AUTHORIZED ERP
+    </text>
+    <text x="1" y="49" font-family="'Inter', sans-serif" font-weight="700" font-size="8.5" fill="#8898aa" letter-spacing="0.8">
+      THE ASLI FOAM • PAKISTAN'S NO. 1 MATTRESS
+    </text>
+  </g>
+</svg>

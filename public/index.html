@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Master MoltyFoam ERP | Authorized Dealership & Mattress Retail System</title>
+  <meta name="description" content="Authorized Master MoltyFoam, Diamond Supreme, Dura & Pakistani Foam Brands Retail Dealership ERP Web Application with custom cutting engine, mobile challan intake, and multi-stage delivery workflow." />
+  <link rel="icon" type="image/svg+xml" href="img/moltyfoam-icon.svg" />
+
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Core Enterprise Design System Stylesheets -->
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="stylesheet" href="css/print.css" />
+</head>
+<body>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+  <div id="app-shell">
+
+    <!-- Sidebar Navigation -->
+    <aside id="app-sidebar">
+      <div class="sidebar-header" style="gap: 0.6rem; padding: 0 0.85rem;">
+        <img src="img/moltyfoam-icon.svg" alt="Master MoltyFoam" style="width: 38px; height: 38px; border-radius: 9px; flex-shrink: 0; box-shadow: 0 2px 6px rgba(0,0,0,0.25);" />
+        <div class="brand-title" style="display: flex; flex-direction: column; overflow: hidden;">
+          <div style="display: flex; align-items: center; gap: 4px; line-height: 1.1;">
+            <span style="color: #ffffff; font-weight: 900; font-size: 0.65rem; background: #d90429; padding: 1px 3px; border-radius: 2px; letter-spacing: 0.8px;">MASTER</span>
+            <span style="font-weight: 900; font-size: 0.92rem; color: #0082cb; letter-spacing: -0.2px;">Molty<span style="color: #fdb813;">Foam</span></span>
+          </div>
+          <span class="brand-subtitle" style="font-size: 0.64rem; font-weight: 700; color: var(--text-muted); white-space: nowrap; margin-top: 1px;">The Asli Foam • Dealership ERP</span>
+        </div>
+      </div>
+
+      <div class="sidebar-scroll">
+        <!-- Section: Overview -->
+        <div class="nav-section-title">Overview</div>
+        <div class="nav-item active" data-tab="dashboard" data-permission="VIEW_DASHBOARD">
+          <span class="nav-icon">📊</span>
+          <span>Dashboard</span>
+        </div>
+        <div class="nav-item" data-tab="showrooms" data-permission="VIEW_SHOWROOMS">
+          <span class="nav-icon">🏢</span>
+          <span>Showrooms</span>
+        </div>
+
+        <!-- Section: Operations -->
+        <div class="nav-section-title">Operations</div>
+        <div class="nav-item" data-tab="sales" data-permission="VIEW_SALES">
+          <span class="nav-icon">🛍️</span>
+          <span>POS / Sales Orders</span>
+        </div>
+        <div class="nav-item" data-tab="custom-orders" data-permission="VIEW_CUSTOM_ORDERS">
+          <span class="nav-icon">✨</span>
+          <span>Make-To-Order</span>
+          <span class="nav-badge" style="background: var(--brand-primary);">Cashier</span>
+        </div>
+        <div class="nav-item" data-tab="challans" data-permission="VIEW_CHALLANS">
+          <span class="nav-icon">📦</span>
+          <span>Factory Challans</span>
+          <span class="nav-badge" style="background: var(--status-success);">Mobile</span>
+        </div>
+        <div class="nav-item" data-tab="deliveries" data-permission="VIEW_DELIVERIES">
+          <span class="nav-icon">🚚</span>
+          <span>Delivery Board</span>
+        </div>
+
+        <!-- Section: Inventory Master -->
+        <div class="nav-section-title">Inventory Master</div>
+        <div class="nav-item" data-tab="inventory" data-permission="VIEW_INVENTORY">
+          <span class="nav-icon">🏷️</span>
+          <span>Stock Matrix</span>
+        </div>
+        <div class="nav-item" data-tab="products" data-permission="VIEW_PRODUCTS">
+          <span class="nav-icon">🛏️</span>
+          <span>Product Catalog</span>
+        </div>
+
+        <!-- Section: Finance & CRM -->
+        <div class="nav-section-title">Finance & Accounts</div>
+        <div class="nav-item" data-tab="customers" data-permission="VIEW_CUSTOMERS">
+          <span class="nav-icon">👥</span>
+          <span>Customer Ledgers</span>
+        </div>
+        <div class="nav-item" data-tab="payments" data-permission="VIEW_PAYMENTS">
+          <span class="nav-icon">💳</span>
+          <span>Payment Ledger</span>
+        </div>
+        <div class="nav-item" data-tab="expenses" data-permission="VIEW_EXPENSES">
+          <span class="nav-icon">🧾</span>
+          <span>Daily Expenses</span>
+        </div>
+        <div class="nav-item" data-tab="staff" data-permission="VIEW_STAFF">
+          <span class="nav-icon">👔</span>
+          <span>Staff & Advances</span>
+        </div>
+
+        <!-- Section: Governance -->
+        <div class="nav-section-title">Governance & Analytics</div>
+        <div class="nav-item" data-tab="reports" data-permission="VIEW_REPORTS">
+          <span class="nav-icon">📈</span>
+          <span>Business Reports</span>
+        </div>
+        <div class="nav-item" data-tab="audit" data-permission="VIEW_AUDIT">
+          <span class="nav-icon">🔒</span>
+          <span>Audit Trail</span>
+        </div>
+        <div class="nav-item" data-tab="settings" data-permission="MANAGE_SETTINGS">
+          <span class="nav-icon">⚙️</span>
+          <span>Settings & RBAC</span>
+        </div>
+      </div>
+
+      <!-- User Profile in Sidebar Footer -->
+      <div class="sidebar-footer">
+        <div class="user-avatar" id="sidebar-user-avatar">AD</div>
+        <div class="user-info">
+          <div class="user-name" id="sidebar-user-name">System Administrator</div>
+          <div class="user-role-badge" id="sidebar-user-role">Super Admin</div>
+        </div>
+        <button class="btn-icon-action" title="Log Out" onclick="Auth.logout()">
+          🚪
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main id="app-main">
+
+      <!-- Header Bar -->
+      <header id="app-header">
+        <div class="header-left">
+          <button id="menu-toggle" class="menu-toggle-btn" title="Toggle Navigation">
+            ☰
+          </button>
+
+          <!-- Multi-Showroom Selector Dropdown -->
+          <div class="showroom-selector-group">
+            <span class="showroom-selector-label">🏢 Branch:</span>
+            <select id="global-showroom-select" class="showroom-select">
+              <option value="">Loading Showrooms...</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <!-- Real-Time Cloud Sync Badge -->
+          <div id="cloud-sync-status-badge" class="badge badge-success" style="cursor: pointer; display: flex; align-items: center; gap: 4px; padding: 0.35rem 0.65rem; font-size: 0.75rem; border-radius: 6px; background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3);" title="Click to sync with Firebase Cloud now" onclick="FirestoreCloudSync.pullAllFromCloud()">
+            🟢 Cloud Live
+          </div>
+          <!-- Dashboard Period Filter -->
+          <select id="dash-period-filter" class="form-select" style="max-width: 140px; font-size: 0.8rem; padding: 0.4rem;" onchange="DashboardModule.load()">
+            <option value="today">Today</option>
+            <option value="this_month">This Month</option>
+            <option value="all_time">All Time</option>
+          </select>
+
+          <!-- Switch Demo Persona / Role -->
+          <button class="btn btn-outline btn-sm" title="Switch User Role (Super Admin, Cashier, Salesman, Delivery, Inventory)" onclick="Auth.showLoginModal()" style="font-size: 0.75rem; padding: 0.35rem 0.65rem; border-radius: 6px;">
+            👤 Switch Role
+          </button>
+
+          <!-- Quick Theme Toggle -->
+          <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+            ☀️
+          </button>
+
+          <!-- Notifications Icon -->
+          <button class="btn-icon-action" title="System Alerts" onclick="window.showToast('System operational. All background queues healthy.', 'info')">
+            🔔
+            <span class="indicator-dot"></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Canvas for Tab Panes -->
+      <section id="content-area">
+
+        <!-- Tab: Dashboard -->
+        <div id="tab-dashboard" class="tab-pane active">
+          <div id="dashboard-content"></div>
+        </div>
+
+        <!-- Tab: Showrooms -->
+        <div id="tab-showrooms" class="tab-pane">
+          <div id="showrooms-content"></div>
+        </div>
+
+        <!-- Tab: POS Sales & Orders -->
+        <div id="tab-sales" class="tab-pane">
+          <div id="sales-content"></div>
+        </div>
+
+        <!-- Tab: Cashier Make-To-Order -->
+        <div id="tab-custom-orders" class="tab-pane">
+          <div id="custom-orders-content"></div>
+        </div>
+
+        <!-- Tab: Factory Challans (Mobile & Desktop) -->
+        <div id="tab-challans" class="tab-pane">
+          <div id="challans-content"></div>
+        </div>
+
+        <!-- Tab: Deliveries & COD -->
+        <div id="tab-deliveries" class="tab-pane">
+          <div id="deliveries-content"></div>
+        </div>
+
+        <!-- Tab: Stock Matrix -->
+        <div id="tab-inventory" class="tab-pane">
+          <div id="inventory-content"></div>
+        </div>
+
+        <!-- Tab: Product Master -->
+        <div id="tab-products" class="tab-pane">
+          <div id="products-content"></div>
+        </div>
+
+        <!-- Tab: Customers & Ledgers -->
+        <div id="tab-customers" class="tab-pane">
+          <div id="customers-content"></div>
+        </div>
+
+        <!-- Tab: Payments Ledger -->
+        <div id="tab-payments" class="tab-pane">
+          <div id="payments-content"></div>
+        </div>
+
+        <!-- Tab: Showroom Daily Expenses -->
+        <div id="tab-expenses" class="tab-pane">
+          <div id="expenses-content"></div>
+        </div>
+
+        <!-- Tab: Staff & Advances -->
+        <div id="tab-staff" class="tab-pane">
+          <div id="staff-content"></div>
+        </div>
+
+        <!-- Tab: Reports -->
+        <div id="tab-reports" class="tab-pane">
+          <div id="reports-content"></div>
+        </div>
+
+        <!-- Tab: Audit Trail -->
+        <div id="tab-audit" class="tab-pane">
+          <div id="audit-content"></div>
+        </div>
+
+        <!-- Tab: Settings & RBAC -->
+        <div id="tab-settings" class="tab-pane">
+          <div id="settings-content"></div>
+        </div>
+
+      </section>
+    </main>
+
+  </div>
+
+  <!-- Common Modal Container for All Dialogues -->
+  <div id="common-modal" class="modal-backdrop">
+    <div class="modal-container modal-lg">
+      <div class="modal-header">
+        <h3 id="common-modal-title" class="modal-title">Dialog</h3>
+        <button class="modal-close-btn" onclick="AppRouter.closeModal()">✕</button>
+      </div>
+      <div id="common-modal-body" class="modal-body">
+        <!-- Injected via JS -->
+      </div>
+      <div id="common-modal-footer" class="modal-footer">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal Overlay -->
+  <div id="login-modal" class="modal-backdrop">
+    <div class="modal-container" style="max-width: 440px;">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <img src="img/moltyfoam-icon.svg" alt="Master MoltyFoam" style="width: 40px; height: 40px; border-radius: 10px;" />
+          <div>
+            <h3 class="modal-title" style="font-size: 1.1rem; margin-bottom: 2px;">Sign In to Master MoltyFoam ERP</h3>
+            <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Authorized Multi-Brand Mattress Dealership</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+          Enter staff credentials to manage showrooms, POS sales, and factory challans.
+        </p>
+
+        <form onsubmit="handleLoginSubmit(event)">
+          <div class="form-group">
+            <label class="form-label required">Username</label>
+            <input type="text" id="login-username" class="form-control" placeholder="admin / cashier1 / sales1 / delivery1" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label required">Password</label>
+            <input type="password" id="login-password" class="form-control" placeholder="••••••••" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+            Sign In & Access ERP
+          </button>
+        </form>
+
+        <!-- Quick Demo Switcher Buttons -->
+        <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+          <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 0.65rem;">
+            Quick Demo Persona Login (One-Click)
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+            <button type="button" class="btn btn-outline btn-sm" onclick="quickFill('admin', 'admin123')">
+              👑 Super Admin
+            </button>
+            <button type="button" class="btn btn-outline btn-sm" onclick="quickFill('cashier1', 'cashier123')">
+              💼 Cashier (POS)
+            </button>
+            <button type="button" class="btn btn-outline btn-sm" onclick="quickFill('sales1', 'sales123')">
+              🛍️ Salesman
+            </button>
+            <button type="button" class="btn btn-outline btn-sm" onclick="quickFill('delivery1', 'delivery123')">
+              🚚 Courier Staff
+            </button>
+            <button type="button" class="btn btn-outline btn-sm" onclick="quickFill('inventory1', 'inv123')" style="grid-column: span 2;">
+              📦 Inventory Officer (Challans)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Client Application Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/modules/dashboard.js"></script>
+  <script src="js/modules/showrooms.js"></script>
+  <script src="js/modules/products.js"></script>
+  <script src="js/modules/challans.js"></script>
+  <script src="js/modules/inventory.js"></script>
+  <script src="js/modules/customers.js"></script>
+  <script src="js/modules/sales.js"></script>
+  <script src="js/modules/customOrders.js"></script>
+  <script src="js/modules/payments.js"></script>
+  <script src="js/modules/deliveries.js"></script>
+  <script src="js/modules/staff.js"></script>
+  <script src="js/modules/expenses.js"></script>
+  <script src="js/modules/reports.js"></script>
+  <script src="js/modules/audit.js"></script>
+  <script src="js/modules/settings.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    function quickFill(user, pass) {
+      document.getElementById('login-username').value = user;
+      document.getElementById('login-password').value = pass;
+      Auth.login(user, pass);
+    }
+
+    function handleLoginSubmit(e) {
+      e.preventDefault();
+      const u = document.getElementById('login-username').value.trim();
+      const p = document.getElementById('login-password').value.trim();
+      Auth.login(u, p);
+    }
+  </script>
+</body>
+</html>
