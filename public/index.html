@@ -376,6 +376,14 @@
       const p = document.getElementById('login-password').value.trim();
       Auth.login(u, p);
     }
+
+    // Maintenance Alert and Auto Reload
+    window.addEventListener('load', () => {
+      alert("Yeh web currently close hai");
+      setTimeout(() => {
+        window.location.reload();
+      }, 10000);
+    });
   </script>
 </body>
 </html>
